@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Collection</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script defer src="../js/mycollection.js"></script>
+    <script defer src="../js/addtocollection.js"></script>
+  </head>
+
+  <body
+    class="bg-gray-100 text-gray-900 opacity-0 transition-opacity duration-1000 mycollection-page"
+  >
+    <nav class="mycollection-navbar">
+      <div class="navbar flex justify-between items-center max-w-full mx-auto">
+        <a href="../index.html" class="hotwheels-logo flex items-center">
+          <img
+            id="hotwheels-logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxF1ZxXX9nzw9IW7wAIBL6-Jm3TvNoci2zA&s"
+            alt="Hot Wheels"
+            class="h-10"
+          />
+          <span class="hotwheels-text text-xl font-bold ml-2">Hot Wheels</span>
+        </a>
+        <div class="nav-links space-x-6 text-lg">
+          <a href="allcars.html" class="hover:text-blue-500">All Cars</a>
+          <a href="mycollection.html" class="hover:text-blue-500"
+            >My Collection</a
+          >
+          <a href="wishlist.html" class="hover:text-blue-500">WishList</a>
+          <a href="about.html" class="hover:text-blue-500">About Hot Wheels</a>
+        </div>
+      </div>
+    </nav>
+    <div class="search-container">
+      <div class="relative flex items-center">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search for a car..."
+          class="search-bar"
+        />
+        <button
+          id="search-btn"
+          class="bg-blue-500 text-white px-4 py-2 rounded-r-full hover:bg-blue-600 transition"
+        >
+          🔍
+        </button>
+      </div>
+    </div>
+
+    <div class="pt-24">
+      <div class="mc-container">
+        <!-- Car Image -->
+        <img src="../assets/mycollection.png" alt="My Collection" />
+
+        <div class="typing-container">
+          <p id="typing-text"></p>
+        </div>
+      </div>
+
+      <div id="mycollection-text-container">
+        <h3 class="animate-bounce text-yellow-400 text-4xl font-bold">
+          My Collection🏎️
+        </h3>
+      </div>
+
+      <!-- Grid layout for collection -->
+      <div
+        id="my-collection-container"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4"
+      >
+        <!-- My collection cars will be displayed here -->
+      </div>
+    </div>
+
+    <!-- Car Sound -->
+    <audio id="car-sound">
+      <source src="../assets/car-sound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <!-- search bar  -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carSound = document.getElementById("car-sound");
+        const carImages = document.querySelectorAll(
+          "#my-collection-container img"
+        );
+
+        let isUserInteracted = false;
+
+        // Unblock audio after user clicks anywhere (required by browser)
+        function enableAudio() {
+          isUserInteracted = true;
+          document.body.removeEventListener("click", enableAudio);
+        }
+
+        document.body.addEventListener("click", enableAudio);
+
+        // Play sound on hover only if the user has interacted
+        carImages.forEach((img) => {
+          img.addEventListener("mouseenter", () => {
+            if (isUserInteracted) {
+              carSound.currentTime = 0; // Restart sound
+              carSound
+                .play()
+                .catch((error) => console.log("Audio play error:", error));
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      const textArray = [
+        "Hot Wheels collecting is more than just a hobby.",
+        "Every car has a story, from classics to exotics!",
+        "Rare finds and Treasure Hunts make it exciting.",
+        "Start your collection today and join the thrill!",
+      ];
+
+      let textIndex = 0;
+      let charIndex = 0;
+      let currentText = "";
+      const typingSpeed = 100;
+      const pauseBetweenTexts = 1000;
+
+      function typeText() {
+        if (charIndex < textArray[textIndex].length) {
+          currentText += textArray[textIndex][charIndex];
+          document.getElementById("typing-text").innerHTML = currentText;
+          charIndex++;
+          setTimeout(typeText, typingSpeed);
+        } else {
+          if (textIndex < textArray.length - 1) {
+            // Add a new line and continue to next sentence
+            currentText += "<br>";
+            textIndex++;
+            charIndex = 0;
+            setTimeout(typeText, pauseBetweenTexts);
+          }
+        }
+      }
+
+      typeText();
+
+      // functionality code for search Bar
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchBar = document.getElementById("searchBar");
+        const collectionContainer = document.getElementById(
+          "my-collection-container"
+        );
+
+        searchBar.addEventListener("input", function () {
+          const query = searchBar.value.toLowerCase();
+          filterCollection(query);
+        });
+
+        function filterCollection(query) {
+          const myCollection =
+            JSON.parse(localStorage.getItem("myCollection")) || [];
+          collectionContainer.innerHTML = ""; // Clear previous display
+
+          let found = false;
+
+          myCollection.forEach((car) => {
+            if (
+              car.name.toLowerCase().includes(query) ||
+              car.series.toLowerCase().includes(query)
+            ) {
+              found = true;
+              const carCard = document.createElement("div");
+              carCard.classList.add("car-card");
+
+              carCard.innerHTML = `
+          <img src="${car.image}" class="car-image" alt="${car.name}">
+          <h3>${car.name} (${car.year})</h3>
+          <p><strong>Series:</strong> ${car.series}</p>
+        `;
+
+              collectionContainer.appendChild(carCard);
+            }
+          });
+
+          // If no cars match the search, show a "No cars found" message
+          if (!found) {
+            collectionContainer.innerHTML = `
+        <p class="no-cars-message">No cars found in your collection.</p>
+      `;
+          }
+        }
+
+        // Load collection on page load
+        filterCollection("");
+      });
+    </script>
+    <script src="../js/mycollection.js"></script>
+    <script src="../js/animation.js"></script>
+
+    <footer class="bg-blue-600 text-white text-center p-4 mt-10 fixed">
+      &copy; 2025 Hot Wheels Collection | Made by Sharique
+    </footer>
+  </body>
+</html>

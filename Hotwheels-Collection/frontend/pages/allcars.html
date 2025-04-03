@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Hot Wheels Cars</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body
+    class="bg-gray-100 text-gray-900 opacity-0 transition-opacity duration-1000"
+    onload="document.body.classList.add('opacity-100')"
+  >
+    <!-- Navbar -->
+
+    <body>
+      <div id="navbar-container"></div>
+      <!-- Navbar loads here -->
+
+      <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      </script>
+
+      <!-- Rest of your page content -->
+    </body>
+
+    <!-- Car List -->
+    <div class="container allcars-container mx-auto my-8 p-4">
+      <div class="flex items-center gap-3 pt-20">
+        <img
+          src="../assets/b4a92348d4d100b859561ef331853536.png"
+          alt="Hot Wheels Logo"
+          class="h-auto -ml-8 drop-shadow-[0_0_10px_rgba(255,215,0,0.8)]"
+        />
+        <h3
+          class="text-6xl font-semibold text-yellow-400 animate-pulse drop-shadow-[0_0_10px_rgba(255,215,0,0.8)]"
+        >
+          All HotWheels Cars
+        </h3>
+      </div>
+      <div class="search-container">
+        <div class="relative flex items-center">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search for a car..."
+            class="search-bar"
+          />
+          <button
+            id="search-btn"
+            class="bg-blue-500 text-white px-4 py-2 rounded-r-full hover:bg-blue-600 transition"
+          >
+            🔍
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="cars-container"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4"
+      >
+        <!-- Cars will be dynamically added here via JavaScript -->
+      </div>
+    </div>
+    <div id="collection-message" class="hidden-message">
+      Car added successfully!
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+      &copy; 2025 Hot Wheels Collection | Made by Sharique
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/addtocollection.js"></script>
+    <script src="../js/allcars.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/wishlist.js"></script>
+  </body>
+</html>

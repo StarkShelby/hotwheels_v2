@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Hot Wheels Collection</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body
+    class="bg-gray-100 text-gray-900 opacity-0 transition-opacity duration-1000"
+    onload="fadeInPage()"
+  >
+    <!-- Include Navbar -->
+    <div class="navbar">
+      <a href="../index.html" class="logo">
+        <img
+          id="hotwheels-logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxF1ZxXX9nzw9IW7wAIBL6-Jm3TvNoci2zA&s"
+          alt="Hot Wheels"
+        />
+      </a>
+      <div class="nav-links">
+        <a href="allcars.html">All Cars</a>
+        <a href="mycollection.html">My Collection</a>
+
+        <a href="about.html">About Hot Wheels</a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="container mx-auto p-8 mt-16">
+      <h1 class="text-4xl font-bold text-center text-blue-600 mb-6">
+        About Hot Wheels Collection
+      </h1>
+      <p class="text-lg text-gray-700 text-center max-w-2xl mx-auto">
+        Welcome to the <strong>Hot Wheels Collection</strong>, the ultimate
+        platform for car enthusiasts and collectors! Here, you can browse
+        through a massive selection of Hot Wheels cars, manage your personal
+        collection, and discover rare and limited-edition models. Whether you're
+        a seasoned collector or just starting out, this site is built for you.
+      </p>
+
+      <!-- Video Section (Fixed Size and Responsive) -->
+
+      <!-- Image Section -->
+      <div class="image-container">
+        <img
+          src="https://www.timescall.com/wp-content/uploads/2022/04/DCC-L-HOTWHEELS_MJ18258-1.jpg?w=1600&resize=1600,900"
+          alt="Hot Wheels Collection"
+        />
+      </div>
+
+      <!-- Features -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div class="p-6 bg-white shadow-md rounded-lg text-center">
+          <h2 class="text-xl font-semibold text-blue-600">Browse Cars</h2>
+          <p class="text-gray-600 mt-2">
+            Explore a vast selection of Hot Wheels cars, from classic models to
+            the latest releases.
+          </p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-lg text-center">
+          <h2 class="text-xl font-semibold text-blue-600">Manage Collection</h2>
+          <p class="text-gray-600 mt-2">
+            Add your favorite cars to your collection and keep track of what you
+            own.
+          </p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-lg text-center">
+          <h2 class="text-xl font-semibold text-blue-600">Rare Finds</h2>
+          <p class="text-gray-600 mt-2">
+            Discover rare and Treasure Hunt editions to make your collection
+            stand out.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function fadeInPage() {
+        document.body.classList.add("opacity-100");
+      }
+    </script>
+  </body>
+</html>

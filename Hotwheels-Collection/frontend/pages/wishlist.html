@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wishlist</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="wishlist-page">
+    <!-- Navbar Section -->
+    <nav class="mycollection-navbar">
+      <div class="navbar flex justify-between items-center max-w-full mx-auto">
+        <a href="../index.html" class="hotwheels-logo flex items-center">
+          <img
+            id="hotwheels-logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxF1ZxXX9nzw9IW7wAIBL6-Jm3TvNoci2zA&s"
+            alt="Hot Wheels"
+            class="h-10"
+          />
+          <span class="hotwheels-text text-xl font-bold ml-2">Hot Wheels</span>
+        </a>
+        <div class="nav-links space-x-6 text-lg">
+          <a href="allcars.html" class="hover:text-blue-500">All Cars</a>
+          <a href="mycollection.html" class="hover:text-blue-500"
+            >My Collection</a
+          >
+          <a href="about.html" class="hover:text-blue-500">About Hot Wheels</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Wishlist Content -->
+    <h2 class="text-3xl text-center mt-5">My Wishlist</h2>
+
+    <div id="wishlist-container" class="flex flex-wrap justify-evenly mt-10">
+      <!-- Wishlist cars will be displayed here -->
+    </div>
+
+    <script src="../js/wishlist.js"></script>
+  </body>
+</html>

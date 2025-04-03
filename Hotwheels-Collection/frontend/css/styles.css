@@ -1,0 +1,854 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700&display=swap");
+
+img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.search-bar {
+  width: 350px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 2px solid #ff4500; /* Hot Wheels theme orange */
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0px 4px 15px rgba(255, 102, 0, 0.5);
+}
+
+.search-bar::placeholder {
+  color: #888;
+  font-style: italic;
+}
+#search-btn {
+  background: linear-gradient(45deg, #ff4500, #ff7600);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+#search-btn:hover {
+  background: linear-gradient(45deg, #ff7600, #ff4500);
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  #search-input {
+    width: 180px;
+    font-size: 12px;
+  }
+
+  #search-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+.remove-btn {
+  background-color: #dc2626; /* Red color */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #b91c1c; /* Darker red on hover */
+  transition: background 0.3s ease;
+  color: black;
+}
+
+.car-card {
+  background: rgb(139, 124, 192);
+  padding: 20px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px; /* Increase width */
+  height: auto; /* Keep height flexible */
+}
+
+.car-card:hover {
+  transform: scale(1.15); /* Slight zoom effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.car-image {
+  width: 100%;
+  height: auto; /* This will maintain the aspect ratio */
+  object-fit: contain; /* Ensure the image is fully visible */
+  border-radius: 10px;
+}
+
+/* My Collection page styling */
+.mycollection-page {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+}
+
+/* My Collection container styling */
+/* Collection page container for horizontal card layout */
+
+.mycollection-page #my-collection-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+  justify-content: flex-start; /* Align cards to the left */
+  gap: 20px; /* Adds space between cards */
+  padding: 20px;
+  margin-top: 30px;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Card styling for My Collection page */
+.mycollection-page .car-card {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  width: 330px;
+  min-height: 650px;
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hover effect for cards */
+.mycollection-page .car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.4);
+}
+
+/* Image style for car cards */
+.mycollection-page .car-image {
+  width: 100%;
+  height: 450px; /* Increased height for better image visibility */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Header styling */
+.mycollection-page h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #ff0099; /* Neon pink */
+  text-shadow: 0px 0px 10px #ff0099, 0px 0px 20px #ff0099, 0px 0px 30px #ff0099; /* Neon effect */
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+/* Remove and Transfer buttons styling */
+.mycollection-page .buttons-container {
+  display: flex;
+  justify-content: space-between; /* Align buttons side by side (left/right) */
+  gap: 20px; /* Space between buttons */
+  margin-top: 15px;
+  width: 100%; /* Ensure buttons take full width of card */
+}
+
+.mycollection-page button.remove-btn {
+  background-color: #ff4d4d; /* Neon red */
+  border: none;
+  color: white;
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
+  flex: 1; /* Ensure buttons are equal size */
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  width: auto;
+}
+
+/* Hover effect for 'Remove from Collection' button */
+.mycollection-page button.remove-btn:hover {
+  background-color: #e60000; /* Darker red */
+  box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.7);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff6600;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff9900, 0 0 25px #ff3300;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff6600;
+  }
+}
+
+#mycollection-text-container h3 {
+  margin-left: 2%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffcc00; /* Bright yellow */
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+
+  animation: fadeIn 1s ease-in-out, glow 1.5s infinite alternate;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+.mc-container img {
+  width: 35%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.add-to-collection-btn {
+  font-size: 18px; /* Bigger text */
+  padding: 12px 20px; /* Larger button */
+}
+
+/* Apply effect only on mycollection.html */
+body {
+  background: linear-gradient(
+    to right,
+    #1e293b,
+    #4953df
+  ); /* Dark blue gradient */
+  color: white; /* White text for better visibility */
+}
+
+/* Default navbar styles */
+.navbar-sticky {
+  width: 100%; /* Full viewport width */
+  left: 0;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure full width */
+  padding: 0; /* Remove all padding */
+  margin: 0; /* Ensure no margins */
+  background-color: #1f1f44; /* Keep your existing background */
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .logo img {
+  height: 50px;
+  margin-left: 10px; /* Adjust logo size */
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.navbar .nav-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 17px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #634af3;
+  color: black;
+}
+
+.hotwheels-logo {
+  margin-left: 10px;
+  display: flex;
+  align-items: center; /* Align logo and text horizontally */
+  gap: 8px; /* Space between logo and text */
+}
+
+.hotwheels-logo img {
+  width: 120px; /* Set a reasonable fixed size */
+  height: 60px;
+  border-radius: 20px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in; /* Smooth effect */
+}
+
+.hotwheels-logo img:hover {
+  transform: scale(0.7); /* Increase size on hover */
+}
+.hotwheels-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 234, 0);
+}
+
+/* Fix video size */
+
+/* Image Styling - Larger */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 650px; /* Increase image width */
+  height: 400px; /* Increase image height */
+  object-fit: cover; /* Prevent stretching */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mc-container {
+  position: relative;
+  display: inline-block;
+}
+
+.mc-container img {
+  display: block;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Left Headlamp Glow */
+.mc-container::before,
+.mc-container::after {
+  content: "";
+  position: absolute;
+  width: 80px; /* Adjust width based on headlamp size */
+  height: 20px; /* Adjust height based on headlamp size */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 150, 0.9),
+    rgba(255, 255, 150, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  filter: blur(5px);
+}
+
+/* Adjust positions of the headlamp glow */
+.mc-container::before {
+  top: 51%; /* Adjust to match left headlamp */
+  left: 17%; /* Adjust to match left headlamp */
+}
+
+.mc-container::after {
+  top: 57%; /* Adjust to match right headlamp */
+  right: 66%; /* Adjust to match right headlamp */
+}
+
+/* Show glow on hover */
+.mc-container:hover::before,
+.mc-container:hover::after {
+  opacity: 1.8;
+}
+
+.active-click:active {
+  transform: scale(0.9);
+  transition: transform 100ms ease-out;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Styling for the main container */
+.mc-container {
+  max-width: 1200px; /* Ensures the container doesn't shrink */
+  margin: 0 auto; /* Centers the container */
+  padding: 1.5rem; /* Adds spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes elements apart */
+}
+
+/* Styling for the car image */
+.mc-container img {
+  width: 50%; /* Takes half of the available width */
+  max-width: 400px; /* Prevents the image from becoming too large */
+}
+
+/* Typing effect container */
+
+.typing-container {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem; /* Increase font size */
+  font-weight: bold;
+  color: #ffd700; /* Gold color for a premium look */
+  text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+}
+
+/* Optional: Add animation for smooth appearance */
+#typing-text {
+  display: inline-block;
+  border-right: 2px solid white; /* Cursor effect */
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* featured card styling */
+
+#featured-collections {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.featured-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Horizontal scrolling container */
+.featured-scroll {
+  display: flex;
+  gap: 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  white-space: nowrap; /* Prevents wrapping */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for a clean look */
+.featured-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.featured-scroll::-webkit-scrollbar-thumb {
+  background: #320d6e;
+  border-radius: 4px;
+}
+
+/* Individual collection card */
+.collection-card {
+  flex: 0 0 auto;
+  width: 350px;
+  background: linear-gradient(blue, #fff);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.collection-card h3 {
+  object-fit: fill;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* More space for text */
+  overflow: hidden;
+}
+.collection-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  white-space: nowrap;
+}
+.collection-card p {
+  font-size: 14px;
+  color: #263578;
+  max-height: 50px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+.no-cars-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.8em;
+  color: #d32f2f;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ffebee, #ffcdd2);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  margin: 30px auto;
+  animation: fadeIn 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.no-cars-message:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffcdd2, #ef9a9a);
+}
+
+.no-cars-icon {
+  font-size: 3em;
+  color: #b71c1c;
+  margin-bottom: 10px;
+  animation: shake 1s infinite alternate;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* video css */
+.video-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 20px auto;
+  height: 350px;
+  width: 30%; /* Reduced width */
+  max-width: 600px; /* Smaller max width */
+  border-radius: 10px;
+  overflow: hidden;
+
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+  object-fit: contain;
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes neonBounce {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6),
+      0 0 20px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 1), 0 0 20px rgba(255, 0, 0, 0.8),
+      0 0 30px rgba(255, 0, 0, 0.6), 0 0 50px rgba(255, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6),
+      0 0 20px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.2);
+  }
+}
+
+.no-cars-message {
+  text-align: center;
+  color: #ff0000; /* Neon Red */
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  animation: neonBounce 1.5s infinite alternate ease-in-out;
+}
+
+.car-card {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* remove wiping effect */
+@keyframes realisticRemove {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  25% {
+    opacity: 0.8;
+    transform: translate(-10px, -10px) scale(0.95) rotate(-5deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(20px, 20px) scale(0.8) rotate(10deg);
+  }
+  75% {
+    opacity: 0.2;
+    transform: translate(40px, 40px) scale(0.6) rotate(20deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(60px, 60px) scale(0.3) rotate(30deg);
+  }
+}
+
+.removing {
+  animation: realisticRemove 1.2s ease-in-out forwards;
+}
+
+.hidden-message {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 128, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden-message.show {
+  opacity: 1;
+}
+
+/* wishlist button effect */
+/* Wishlist Page specific styles */
+/* Wishlist container styling */
+.wishlist-page #wishlist-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to next row */
+  justify-content: space-evenly; /* Ensure space is evenly distributed between cards */
+  gap: 20px; /* Reduced gap between cards */
+  padding: 20px;
+  margin-top: 30px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Car card style specifically for wishlist page */
+.wishlist-page .car-card {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  width: 350px; /* Reduced width to allow 3 cards per row */
+  min-height: 600px; /* Adjusted minimum height for better card size */
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Hover effect for cards */
+.wishlist-page .car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.4);
+}
+
+/* Image style for car cards */
+.wishlist-page .car-image {
+  width: 100%;
+  height: 500px; /* Adjusted height for better image visibility */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Container for the buttons to make them appear side by side */
+.wishlist-page .buttons-container {
+  display: flex;
+  justify-content: space-between; /* Align buttons side by side (left/right) */
+  gap: 10px; /* Reduced space between buttons */
+  margin-top: 15px;
+  width: 100%; /* Ensure buttons take full width of card */
+}
+
+/* Styling individual buttons */
+button.remove-btn {
+  background-color: #b2b2b2; /* Neon red */
+  border: none;
+  color: rgb(44, 34, 92);
+  padding: 10px 20px; /* Reduced padding for smaller buttons */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
+  flex: 1; /* Ensure buttons are equal size */
+  font-size: 16px; /* Adjust font size */
+  text-align: center;
+  padding-inline-start: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  width: auto;
+}
+button.transfer-btn {
+  background-color: #bcbcbc; /* Neon red */
+  border: none;
+  color: rgb(44, 34, 92);
+  padding: 10px 20px; /* Reduced padding for smaller buttons */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
+  flex: 1; /* Ensure buttons are equal size */
+  font-size: 16px; /* Adjust font size */
+  text-align: center;
+  padding-inline-start: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  width: auto;
+}
+/* Wishlist title (My Wishlist) styling */
+.wishlist-page h2 {
+  text-align: center; /* Center the text */
+  font-size: 36px; /* Adjust font size */
+  color: #ff0099; /* Neon pink */
+  text-shadow: 0px 0px 10px #ff0099, 0px 0px 20px #ff0099, 0px 0px 30px #ff0099; /* Neon effect */
+  margin-top: 40px; /* Add margin to top for spacing */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Hover effect for 'Remove from Wishlist' button */
+.wishlist-page button.remove-btn:hover {
+  background-color: #e60000; /* Darker red */
+  box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.7);
+}
+
+/* Hover effect for 'Transfer to Collection' button */
+.wishlist-page button.transfer-btn:hover {
+  background-color: #45a049; /* Darker green */
+  box-shadow: 0px 0px 25px rgba(0, 255, 0, 0.7);
+}
+
+/* Active/Focus effect for buttons */
+.wishlist-page button.remove-btn:focus,
+.wishlist-page button.remove-btn:active,
+.wishlist-page button.transfer-btn:focus,
+.wishlist-page button.transfer-btn:active {
+  outline: none;
+}
+
+/* Neon heart button */
+button.wishlist-btn {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #808080;
+  transition: all 0.3s ease;
+  text-shadow: 0px 0px 15px rgba(255, 0, 255, 0.5);
+}
+
+/* animation for wishlist card */
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button.wishlist-btn:hover {
+  animation: heartBeat 0.6s infinite;
+}
+/* Define the fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply fade-out effect to .car-card elements when the class fade-out is added */
+.fade-out {
+  animation: fadeOut 0.3s ease-in; /* Apply fadeOut animation for 0.5 seconds */
+}

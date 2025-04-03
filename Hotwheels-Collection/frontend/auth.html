@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+      <h2 id="auth-title" class="text-2xl font-bold text-center mb-4">
+        Sign In
+      </h2>
+
+      <form id="auth-form">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="w-full mb-3 p-2 border rounded"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          class="w-full mb-3 p-2 border rounded"
+          required
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
+        >
+          Continue
+        </button>
+      </form>
+
+      <p class="text-center mt-4 cursor-pointer text-blue-600" id="toggle-auth">
+        Don't have an account? Sign up
+      </p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const authForm = document.getElementById("auth-form");
+        const toggleAuth = document.getElementById("toggle-auth");
+        const authTitle = document.getElementById("auth-title");
+        let isSignUp = false;
+
+        // ✅ Correct API URL handling
+        const BACKEND_URL =
+          window.location.hostname === "127.0.0.1"
+            ? "http://127.0.0.1:5001"
+            : "https://hotwheels-backend.vercel.app"; // Replace with your deployed backend URL
+
+        // ✅ Toggle between Sign In and Sign Up
+        toggleAuth.addEventListener("click", () => {
+          isSignUp = !isSignUp;
+          authTitle.textContent = isSignUp ? "Sign Up" : "Sign In";
+          toggleAuth.textContent = isSignUp
+            ? "Already have an account? Sign in"
+            : "Don't have an account? Sign up";
+        });
+
+        authForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          const endpoint = isSignUp ? "/signup" : "/login";
+          const userData = { email, password };
+
+          try {
+            const response = await fetch(`${BACKEND_URL}${endpoint}`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(userData),
+              credentials: "include", // ✅ Ensure cookies (session) are included
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+              alert(data.message);
+              if (!isSignUp) {
+                // ✅ Redirect to homepage after login
+                window.location.href = "/index.html";
+              }
+            } else {
+              alert(data.message || "Something went wrong. Try again.");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert(
+              "Failed to connect to the server. Check your network and try again."
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

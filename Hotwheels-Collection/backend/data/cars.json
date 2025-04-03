@@ -1,0 +1,787 @@
+[
+  {
+    "id": 1,
+    "name": "Nissan Skyline GT-R (R34)",
+    "year": 1999,
+    "series": "HW J-Imports",
+    "image": "https://images-cdn.u-buy.co.uk/646206b21a7be06d0f237dd1-hot-wheels-2010-keys-to-speed-nissan.jpg",
+    "category": "STH"
+  },
+  {
+    "id": 2,
+    "name": "Toyota Supra MK4",
+    "year": 1994,
+    "series": "Fast & Furious",
+    "image": "https://m.media-amazon.com/images/I/71Muq0FnerL.jpg",
+    "category": "Mainline"
+  },
+  {
+    "id": 3,
+    "name": "Chevrolet Camaro SS",
+    "year": 1969,
+    "series": "Muscle Mania",
+    "image": "https://toys-india.com/cdn/shop/files/1969ChevyCamaroBlueColour_05a60094-2516-439e-859c-f297d58f5aa9.jpg?v=1713348334",
+    "category": "Mainline"
+  },
+  {
+    "id": 4,
+    "name": "Ford Mustang Mach 1",
+    "year": 1971,
+    "series": "Muscle Mania",
+    "image": "https://m.media-amazon.com/images/I/81-K7Q96jNL.jpg",
+    "category": "STH"
+  },
+  {
+    "id": 5,
+    "name": "Lamborghini Aventador J",
+    "year": 2012,
+    "series": "Exotic Envy",
+    "image": "https://m.media-amazon.com/images/I/91qenljcEyL.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bugatti Chiron",
+    "year": 2018,
+    "series": "Exotics",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQOLbA-Hzb8WGtcARCTgfbZYBHnGS8e1bqG4lRr8AEc3DyPCoEkof_gWUps2mHePJwllnonD_kGjUES7bCMuOaTA20CJCjV4nr4KwHHpsyo"
+  },
+  {
+    "id": 7,
+    "name": "Tesla Cybertruck",
+    "year": 2023,
+    "series": "HW Green Speed",
+    "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/vehicle-pull-along/n/l/z/tesla-cybertruck-mattel-hotwheels-3-original-imaghaukhemx26j7.jpeg?q=90&crop=false"
+  },
+  {
+    "id": 8,
+    "name": "Porsche 911 GT3 RS",
+    "year": 2016,
+    "series": "HW Speed Graphics",
+    "image": "https://rukminim2.flixcart.com/image/850/1000/kkvhea80/vehicle-pull-along/i/r/t/porsche-911-gt3-rs-mattel-hot-wheels-original-imagy4mgp6qte8dh.jpeg?q=90&crop=false"
+  },
+  {
+    "id": 9,
+    "name": "Honda Civic Type R (EK9)",
+    "year": 1997,
+    "series": "J-Imports",
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTO6xLcV2FTfiwVfhwVzq_XYIvXxTnN8pBrXMbfAhycHpMQch-xfU8mCCTSYsWGs8N8Xk0fTkFG-J-gpzWlh9KngsCEVkQpgm2vJ0aA5CGv6O-C7EsidGLLwQ"
+  },
+  {
+    "id": 10,
+    "name": "Dodge Charger Daytona",
+    "year": 1969,
+    "series": "Muscle Mania",
+    "image": "https://m.media-amazon.com/images/I/91Cbi80ialL.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mazda RX-7 (FD3S)",
+    "year": 1995,
+    "series": "HW Drift",
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ_y9OjAiUEa6GwmMlWQp8r_uytuMHRlE1T9cPhYZBn-vluNDM-1uG6a5Bp8RzQalvhl4EJMtoXi2cuKy1XzVeEDkbDFTJjPFtLXN51ies4"
+  },
+  {
+    "id": 12,
+    "name": "Koenigsegg Jesko",
+    "year": 2020,
+    "series": "Hypercar",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcREHXaPigii-6kIhRjVesFBMiOINBm_2BrYo4wQ9qIRsTOt5ceyCTJMTAnL3ZNQm40Nb8v3RXsWHrAQPVgWRjhr2-rdnSPWm2c9pUqPCOZ0t0uVRJqVbKYfyA"
+  },
+  {
+    "id": 13,
+    "name": "McLaren F1",
+    "year": 1992,
+    "series": "Retro Racers",
+    "image": "https://m.media-amazon.com/images/I/51toytqYJAL.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Aston Martin Valhalla",
+    "year": 2022,
+    "series": "Hypercar",
+    "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/vehicle-pull-along/x/o/r/aston-martin-valhalla-concept-mattel-hotwheels-3-original-imagjq45rvg4wawb.jpeg?q=90&crop=false"
+  },
+  {
+    "id": 15,
+    "name": "Pagani Huayra Roadster",
+    "year": 2017,
+    "series": "Exotics",
+    "image": "https://m.media-amazon.com/images/I/71YVa2wHtLL.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Ferrari F40",
+    "year": 1987,
+    "series": "Exotics",
+    "image": "https://m.media-amazon.com/images/I/91Snmf1swyL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Lamborghini Countach LP 5000 QV",
+    "year": 1985,
+    "series": "Exotics",
+    "image": "https://m.media-amazon.com/images/I/61QMvOF0fzL.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Dodge Challenger SRT Demon",
+    "year": 2018,
+    "series": "Muscle Mania",
+    "image": "https://m.media-amazon.com/images/I/51tIUdz+SsL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Chevrolet Corvette C8.R",
+    "year": 2020,
+    "series": "HW Race Day",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThO_dmG54ZGqvsCe2r34fi-ogUxvsWMimAXg&s"
+  },
+  {
+    "id": 20,
+    "name": "Porsche 918 Spyder",
+    "year": 2015,
+    "series": "Exotics",
+    "image": "https://m.media-amazon.com/images/I/61f063uyIDL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Ford GT40",
+    "year": 2024,
+    "series": "Retro Racers",
+    "image": "https://m.media-amazon.com/images/I/61mGWXTSsfL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 22,
+    "name": "BMW M3 E46",
+    "year": 2005,
+    "series": "HW Speed Graphics",
+    "image": "https://m.media-amazon.com/images/I/816WfxohtcL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Jaguar XJ220",
+    "year": 1992,
+    "series": "Exotics",
+    "image": "https://m.media-amazon.com/images/I/51HfaAImR+L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Mercedes-Benz 300 SL",
+    "year": 1954,
+    "series": "HW Dream Garage",
+    "image": "https://m.media-amazon.com/images/I/81PBTsfn+aL.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Pagani Zonda R",
+    "year": 2010,
+    "series": "Hypercar",
+    "image": "https://m.media-amazon.com/images/I/61GbJdh0urL.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Subaru WRX STI",
+    "year": 2019,
+    "series": "HW Speed Graphics",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8hWIrhL9kn1DBQLSmcxyrVgOC1qGTJWZIcQ&s"
+  },
+  {
+    "id": 27,
+    "name": "Mazda Miata MX-5",
+    "year": 1990,
+    "series": "J-Imports",
+    "image": "https://thepeppystore.in/cdn/shop/files/WhatsAppImage2024-10-11at5.30.19PM.jpg?v=1728999332"
+  },
+  {
+    "id": 28,
+    "name": "Ford Bronco",
+    "year": 2021,
+    "series": "Baja Blazers",
+    "image": "https://m.media-amazon.com/images/I/51LaXQxCs+L.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Audi R8 LMS",
+    "year": 2018,
+    "series": "HW Race Day",
+    "image": "https://toys-india.com/cdn/shop/files/AudiR8LMSBlueColour_c7285e15-8a74-4d22-9020-9c4cec6cc9a8_800x1000.jpg?v=1713349257"
+  },
+  {
+    "id": 30,
+    "name": "Nissan 350Z",
+    "year": 2003,
+    "series": "HW ",
+    "image": "https://m.media-amazon.com/images/I/71S0uCqVKsL._AC_UF1000,1000_QL80_.jpg"
+  },
+
+  {
+    "id": 31,
+    "name": "Twin Mill III",
+    "year": "2023",
+    "series": "HW Dream Garage",
+    "image": "https://m.media-amazon.com/images/I/81w0wTNHpOL.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 32,
+    "name": "Bone Shaker",
+    "year": "2022",
+    "series": "HW Art Cars",
+    "image": "https://m.media-amazon.com/images/I/81apPJRL9hL.jpg",
+    "category": "Hot Rod"
+  },
+  {
+    "id": 33,
+    "name": "Rodger Dodger",
+    "year": "2021",
+    "series": "Muscle Mania",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/81uKHvcnRnL._AC_UL495_SR435,495_.jpg",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 34,
+    "name": "Nissan Skyline GT-R R34",
+    "year": "2023",
+    "series": "Fast & Furious",
+    "image": "https://m.media-amazon.com/images/I/61IjoW7LNIL._AC_UF1000,1000_QL80_.jpg",
+    "category": "JDM"
+  },
+  {
+    "id": 35,
+    "name": "Lamborghini Sesto Elemento",
+    "year": "2022",
+    "series": "HW Exotics",
+    "image": "https://m.media-amazon.com/images/I/61N+Z2QQGHL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 36,
+    "name": "Ford Mustang Mach 1",
+    "year": "2021",
+    "series": "Muscle Mania",
+    "image": "https://m.media-amazon.com/images/I/71YakhK3TJL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 37,
+    "name": "Dodge Charger Daytona",
+    "year": "2022",
+    "series": "Muscle Mania",
+    "image": "https://m.media-amazon.com/images/I/916NfkSrsxL.jpg",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 38,
+    "name": "Tesla Roadster",
+    "year": "2023",
+    "series": "HW Green Speed",
+    "image": "https://images-fe.ssl-images-amazon.com/images/I/7180uvx8GmL._AC_UL495_SR435,495_.jpg",
+    "category": "Electric"
+  },
+  {
+    "id": 39,
+    "name": "Koenigsegg Jesko",
+    "year": "2023",
+    "series": "HW Exotics",
+    "image": "https://m.media-amazon.com/images/I/51KmaKhGzhL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Hypercar"
+  },
+  {
+    "id": 40,
+    "name": "Chevy Camaro ZL1",
+    "year": "2021",
+    "series": "Muscle Mania",
+    "image": "https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/sQIAAOSwl7VhP3xr/$_57.JPG?set_id=8800005007",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 41,
+    "name": "BMW i8 Roadster",
+    "year": "2022",
+    "series": "HW Roadster",
+    "image": "https://m.media-amazon.com/images/I/61jQEZteaaL.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 42,
+    "name": "Honda S2000",
+    "year": "2023",
+    "series": "HW J-Imports",
+    "image": "https://images-cdn.ubuy.co.in/633bc50cc70156296d5f7f5b-diecast-hot-wheels-hondas-s2000-hw-j.jpg",
+    "category": "JDM"
+  },
+  {
+    "id": 43,
+    "name": "Mercedes-Benz A class",
+    "year": "2022",
+    "series": "HW J-Imports",
+    "image": "https://m.media-amazon.com/images/I/81gajCnqJ-L.jpg",
+    "category": "JDM"
+  },
+  {
+    "id": 44,
+    "name": "Mazda RX-7 FD",
+    "year": "2023",
+    "series": "HW J-Imports",
+    "image": "https://m.media-amazon.com/images/I/51o3faMClPL.jpg",
+    "category": "JDM"
+  },
+  {
+    "id": 45,
+    "name": "Corvette C8",
+    "year": "2023",
+    "series": "HW Exotics",
+    "image": "https://kinderlogs.in/cdn/shop/files/premium-hot-wheels-chevrolet-corvette-c8r-race-day-474462.png?v=1734785863",
+    "category": "Supercar"
+  },
+  {
+    "id": 46,
+    "name": "McLaren P1",
+    "year": "2022",
+    "series": "HW Exotics",
+    "image": "https://m.media-amazon.com/images/I/51mLc1FseqL.jpg",
+    "category": "Hypercar"
+  },
+  {
+    "id": 47,
+    "name": "Dodge Viper SRT10",
+    "year": "2021",
+    "series": "Muscle Mania",
+    "image": "https://m.media-amazon.com/images/I/51M+QE-72wL.jpg",
+    "category": "Sports Car"
+  },
+  {
+    "id": 48,
+    "name": "Ferrari F40",
+    "year": "2023",
+    "series": "HW Exotics",
+    "image": "https://images-cdn.ubuy.co.in/63451b78ebd76034c5593306-ferrari-f40-hot-wheels-1991-red-ferrari.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 49,
+    "name": "Bugatti Veyron",
+    "year": "2022",
+    "series": "HW Exotics",
+    "image": "https://m.media-amazon.com/images/I/81GMC2wGRAL.jpg",
+    "category": "Hypercar"
+  },
+  {
+    "id": 50,
+    "name": "Jeep Wrangler 4x4",
+    "year": "2021",
+    "series": "HW Off-Road",
+    "image": "https://images-cdn.ubuy.co.in/668a8d5c6c9d102fae64b613-hot-wheels-real-riders-1-43-scale.jpg",
+    "category": "SUV"
+  },
+  {
+    "id": 51,
+    "name": "Mercedes-AMG GT ",
+    "year": "2023",
+    "series": "Fast & Furious",
+    "image": "https://m.media-amazon.com/images/I/71+Yy9si94L._AC_UF1000,1000_QL80_.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 52,
+    "name": "Ford GT",
+    "year": "2022",
+    "series": "HW Race Day",
+    "image": "https://m.media-amazon.com/images/I/51iX4oMyTBL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 53,
+    "name": "BMW M4",
+    "year": "2018",
+    "series": "Gran Turismo",
+    "image": "https://images-cdn.ubuy.co.in/634e95a70cbc0968db1e8a43-hot-wheels-bmw-m4-2018-gran-turismo.jpg",
+    "category": "JDM"
+  },
+  {
+    "id": 54,
+    "name": "Lancia Stratos",
+    "year": "2021",
+    "series": "HW Rally Champs",
+    "image": "https://images-cdn.ubuy.co.in/65ec437d089a554da6176ecc-hot-wheels-lancia-stratos-car-culture.jpg",
+    "category": "Rally"
+  },
+  {
+    "id": 55,
+    "name": "'16 Subaru WRX STI",
+    "year": "2016",
+    "series": "HW Rally Champs",
+    "image": "https://images-cdn.ubuy.co.in/649b7556a83b1a593222655e-hot-wheels-39-16-subaru-wrx-sti.jpg",
+    "category": "Rally"
+  },
+
+  {
+    "id": 56,
+    "name": "Mazda Autozam",
+    "year": "2024",
+    "series": "HW Dream Garage",
+    "image": "https://zone.interaktifis.com/hw/8407272-mazda-autozam-htc86.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "JDM"
+  },
+  {
+    "id": 57,
+    "name": "Batmobile",
+    "year": "2024",
+    "series": "Batman",
+    "image": "https://zone.interaktifis.com/hw/6827745-batmobile-htb21.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Entertainment"
+  },
+  {
+    "id": 58,
+    "name": "Monster High Ghoul Mobile",
+    "year": "2024",
+    "series": "HW Screen Time",
+    "image": "https://zone.interaktifis.com/hw/5317891-monster-high-ghoul-mobile-htc80.webp?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Entertainment"
+  },
+  {
+    "id": 59,
+    "name": "U.S.S. Enterprise NCC-1701",
+    "year": "2024",
+    "series": "HW Screen Time",
+    "image": "https://m.media-amazon.com/images/I/81dUZRZW0rL._AC_UF894,1000_QL80_.jpg",
+    "category": "Entertainment"
+  },
+  {
+    "id": 60,
+    "name": "Hot Wheels High",
+    "year": "2024",
+    "series": "HW Fast Transit",
+    "image": "https://m.media-amazon.com/images/I/61fBHcrd6OL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Bus"
+  },
+  {
+    "id": 61,
+    "name": "Custom Otto",
+    "year": "2024",
+    "series": "HW Dream Garage",
+    "image": "https://zone.interaktifis.com/hw/2582591-hot_wheels_custom_otto-htb49.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Custom"
+  },
+  {
+    "id": 62,
+    "name": "'15 Dodge Charger SRT",
+    "year": "2024",
+    "series": "HW First Response",
+    "image": "https://zone.interaktifis.com/hw/3752529-15-dodge-charger-srt-hcw24.png?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 63,
+    "name": "'47 Chevy Fleetline",
+    "year": "2024",
+    "series": "HW First Response",
+    "image": "https://zone.interaktifis.com/hw/2710461-47-chevy-fleetline-hcv91.png?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Classic"
+  },
+  {
+    "id": 64,
+    "name": "Runway Res-Q",
+    "year": "2024",
+    "series": "HW First Response",
+    "image": "https://zone.interaktifis.com/hw/2202150-hot_wheels_runway_res-q_red-htc88.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Rescue"
+  },
+  {
+    "id": 65,
+    "name": "Mod Speeder",
+    "year": "2024",
+    "series": "HW Modified",
+    "image": "https://zone.interaktifis.com/hw/8148770-hot_wheels_mod_speeder-1-htb64.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Concept"
+  },
+  {
+    "id": 66,
+    "name": "'76 Greenwood Corvette",
+    "year": "2024",
+    "series": "HW Modified",
+    "image": "https://zone.interaktifis.com/hw/423548-76-greenwood-corvette-hcw80.png?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 67,
+    "name": "Ford GT40",
+    "year": "2024",
+    "series": "Factory Fresh",
+    "image": "https://zone.interaktifis.com/hw/252232-hot_wheels_ford_gt40_blue-htd34.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Supercar"
+  },
+  {
+    "id": 68,
+    "name": "Czinger 21C",
+    "year": "2024",
+    "series": "HW Green Speed",
+    "image": "https://zone.interaktifis.com/hw/2228267-hot_wheels_czinger_21c_red-htc92.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "Hypercar"
+  },
+  {
+    "id": 69,
+    "name": "Volvo XC40 Recharge",
+    "year": "2024",
+    "series": "HW Green Speed",
+    "image": "https://zone.interaktifis.com/hw/5161824-hot_wheels_volvo_xc40_recharge_white-htc81.jpg?width=700&height=700&trim=50&fit=contain&bg=ffffff",
+    "category": "SUV"
+  },
+  {
+    "id": 70,
+    "name": "Tesla Model Y",
+    "year": "2024",
+    "series": "HW Green Speed",
+    "image": "https://images-cdn.ubuy.co.in/64c41d48e090a60d6779de2c-hot-wheels-tesla-model-y-white-hw.jpg",
+    "category": "Electric"
+  },
+  {
+    "id": 71,
+    "name": "Skate Grom",
+    "year": "2024",
+    "series": "HW Xtreme Sports",
+    "image": "https://zone.interaktifis.com/hw/3288322-hot_wheels_skate_grom_red-htb96.jpg?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Sports"
+  },
+  {
+    "id": 72,
+    "name": "Surf's Up",
+    "year": "2024",
+    "series": "HW Xtreme Sports",
+    "image": "https://zone.interaktifis.com/hw/9001669-hot_wheels_surfs_up-htb97.jpg?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Sports"
+  },
+  {
+    "id": 73,
+    "name": "Shark Bite",
+    "year": "2024",
+    "series": "HW Mega Bite",
+    "image": "https://zone.interaktifis.com/hw/3457105-hot_wheels_shark_bite_red-htc94.jpg?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Fantasy"
+  },
+  {
+    "id": 74,
+    "name": "'98 Subaru Impreza 22B STI-Version",
+    "year": "2023",
+    "series": "Rally Champs",
+    "image": "https://zone.interaktifis.com/hw/9134684-ghf06-98-subaru-impreza.png?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Rally"
+  },
+  {
+    "id": 75,
+    "name": "Max Steel",
+    "year": "2023",
+    "series": "Rod Squad",
+    "image": "https://zone.interaktifis.com/hw/5159306-hot_wheels_max_steel_red-htc12.jpg?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Hot Rod"
+  },
+  {
+    "id": 76,
+    "name": "'62 Corvette Gasser",
+    "year": "2023",
+    "series": "HW Drag Strip",
+    "image": "https://zone.interaktifis.com/hw/9829863-62-corvette-gasser-hct12.png?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 77,
+    "name": "'18 Camaro SS",
+    "year": "2023",
+    "series": "Then and Now",
+    "image": "https://zone.interaktifis.com/hw/808740-camaro-ss-hcv82.png?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 78,
+    "name": "Nissan Skyline GT-R R34",
+    "year": "2023",
+    "series": "Pop Culture",
+    "image": "https://m.media-amazon.com/images/I/81R+DcLQhcL.jpg",
+    "category": "JDM"
+  },
+
+  {
+    "id": 79,
+    "name": "Jaguar XJ220",
+    "year": "2023",
+    "series": "HW Exotics",
+    "image": "https://m.media-amazon.com/images/I/51EQV1LhnVL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Supercar"
+  },
+  {
+    "id": 80,
+    "name": "Lotus Esprit S1 (Submarine Version)",
+    "year": "2022",
+    "series": "James Bond",
+    "image": "https://i.ebayimg.com/images/g/Jk4AAOSwPqZnWl-0/s-l1200.jpg",
+    "category": "Movie Car"
+  },
+  {
+    "id": 81,
+    "name": "Pagani Huayra R",
+    "year": "2023",
+    "series": "'RLC' HW Hypercars",
+    "image": "https://fatcatcollectibles.in/cdn/shop/files/HMY25_01.webp?v=1718617235",
+    "category": "Hypercar"
+  },
+  {
+    "id": 82,
+    "name": "Shelby Cobra 427 S/C",
+    "year": "2021",
+    "series": " Muscle Mania",
+    "image": "https://zone.interaktifis.com/hw/2356079-shelby-cobra-427.png?height=250&width=250&quality=70&trim=50&fit=contain&bg=ffffff",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 83,
+    "name": "Mercedes-Benz CLK GTR",
+    "year": "2022",
+    "series": "Legends of Speed",
+    "image": "https://hobbycars.co.uk/cdn/shop/files/IMG_E9015.jpg?v=1721579186&width=1946",
+    "category": "Race Car"
+  },
+  {
+    "id": 84,
+    "name": "'70 Plymouth Superbird",
+    "year": "2023",
+    "series": "HW Muscle Cars",
+    "image": "https://m.media-amazon.com/images/I/81fmRu77zoL.jpg",
+    "category": "Classic"
+  },
+  {
+    "id": 85,
+    "name": "Toyota Celica GT-Four ST205",
+    "year": "2023",
+    "series": "HW Rally Champs",
+    "image": "https://m.media-amazon.com/images/I/61k4FQ9pdYL.jpg",
+    "category": "Rally"
+  },
+  {
+    "id": 86,
+    "name": "Chevrolet C6 Corvette ",
+    "year": "2023",
+    "series": "HW Speed Machines",
+    "image": "https://m.media-amazon.com/images/I/619BhbTDm0L.jpg",
+    "category": "Sports"
+  },
+  {
+    "id": 87,
+    "name": "Datsun 510 Wagon",
+    "year": "2023",
+    "series": "JDM Tuners",
+    "image": "https://m.media-amazon.com/images/I/61LosY501bL.jpg",
+    "category": "JDM"
+  },
+  {
+    "id": 88,
+    "name": "BMW 318itouring",
+    "year": "2023",
+    "series": "HW Rally Legends",
+    "image": "https://fatcatcollectibles.in/cdn/shop/files/zppgdfchprd7zzxjbisp_75df881c-0f09-4e3e-95a3-40c3b146226b.jpg?v=1732802366",
+    "category": "Rally"
+  },
+  {
+    "id": 89,
+    "name": "Cadillac Elmiraj Concept",
+    "year": "2023",
+    "series": "Luxury Concepts",
+    "image": "https://images-cdn.ubuy.co.in/666883687f12ed08f268ac47-hot-wheels-2015-hw-city-cadillac.jpg",
+    "category": "Luxury"
+  },
+  {
+    "id": 90,
+    "name": "Porsche Taycan Turbo S",
+    "year": "2023",
+    "series": "EV Performance",
+    "image": "https://images-cdn.ubuy.co.in/63489bfea9fe4a6b3b393d59-diecast-hotwheels-porsche-taycan-turbo-s.jpg",
+    "category": "Electric"
+  },
+  {
+    "id": 91,
+    "name": "Hennessey Venom GT",
+    "year": "2023",
+    "series": "HW Hypercars",
+    "image": "https://globaldiecastdirect.com/56695-thickbox_default/hot-wheels-car-culture-circuit-legends-ford-gt-race.jpg",
+    "category": "Hypercar"
+  },
+  {
+    "id": 92,
+    "name": "Apollo Intensa Emozione",
+    "year": "2023",
+    "series": "coming soon",
+    "image": "https://i.pinimg.com/736x/90/9f/31/909f315ebdac8e9009766dbb6264a3cb.jpg",
+    "category": "Hypercar"
+  },
+  {
+    "id": 93,
+    "name": "Ford RS200",
+    "year": "2023",
+    "series": "HW Rally Champs",
+    "image": "https://m.media-amazon.com/images/I/913hsvqK80L.jpg",
+    "category": "Rally"
+  },
+  {
+    "id": 94,
+    "name": "Nissan Silvia S15 (Formula Drift Edition)",
+    "year": "2023",
+    "series": "Drift Kings",
+    "image": "https://m.media-amazon.com/images/I/91Aub9k2FYL._AC_UF894,1000_QL80_.jpg",
+    "category": "Drift"
+  },
+  {
+    "id": 95,
+    "name": "Dodge Charger Chalenger",
+    "year": "2023",
+    "series": "Muscle Mania",
+    "image": "https://images-cdn.ubuy.co.in/66f82619a6b8b428053ddb94-hot-wheels-18-dodge-challenger-vehicle.jpg",
+    "category": "Muscle Car"
+  },
+  {
+    "id": 96,
+    "name": "Alfa Romeo 33 Stradale",
+    "year": "2023",
+    "series": "Legends of Speed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKiZzXkxnafgnpApLZGRtOeixrn7B87Yskg&s",
+    "category": "Classic"
+  },
+  {
+    "id": 97,
+    "name": "Mazda 787B",
+    "year": "2023",
+    "series": "Le Mans Legends",
+    "image": "https://m.media-amazon.com/images/I/61KQksg530L._AC_UF1000,1000_QL80_.jpg",
+    "category": "Le Mans"
+  },
+  {
+    "id": 98,
+    "name": "Bentley Continental GT3",
+    "year": "2023",
+    "series": "Fast & Furious",
+    "image": "https://m.media-amazon.com/images/I/91QYD0b45DL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Race Car"
+  },
+  {
+    "id": 99,
+    "name": "Subaru Impreza 22B STI",
+    "year": "2023",
+    "series": "HW Rally Champs",
+    "image": "https://thepeppystore.in/cdn/shop/files/WhatsAppImage2024-10-13at11.41.53PM.jpg?v=1728902083",
+    "category": "Rally"
+  },
+  {
+    "id": 100,
+    "name": "Bugatti Bolide",
+    "year": "2023",
+    "series": "HW Exotics",
+    "image": "https://i.etsystatic.com/38356722/r/il/e3d8e5/6231810221/il_1080xN.6231810221_lq1a.jpg",
+    "category": "Hypercar"
+  },
+  {
+    "id": 101,
+    "name": "McLaren Senna",
+    "year": "2023",
+    "series": "HW Exotics",
+    "image": "https://images-cdn.ubuy.co.in/634e470b49c46b6b39327b4a-hot-wheels-mclaren-senna-white-233250.jpg",
+    "category": "Hypercar"
+  }
+]
